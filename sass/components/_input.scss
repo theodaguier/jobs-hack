@@ -1,0 +1,21 @@
+@use "../variables/colors" as *;
+
+.input {
+  width: 50%;
+  padding: 10px;
+  background-color: $color-dark;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  outline: none;
+  border: none;
+  border-bottom: solid 1px $color-white;
+  color: $color-white;
+
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    color: $color-white;
+  }
+}

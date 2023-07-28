@@ -1,0 +1,15 @@
+@use "../variables/colors" as *;
+
+.header {
+  width: auto;
+  height: 100px;
+  display: flex !important;
+  justify-content: space-between;
+  align-items: baseline;
+  .circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: $color-cream;
+  }
+}

@@ -1,0 +1,31 @@
+@use "../variables/fonts" as *;
+
+@font-face {
+  font-family: $neue-light;
+  font-style: normal;
+  src: url(./../../assets/fonts/NeueMontreal-Light.otf);
+}
+
+@font-face {
+  font-family: $neue-regular;
+  font-style: normal;
+  src: url(./../../assets/fonts/NeueMontreal-Regular.otf);
+}
+
+@font-face {
+  font-family: $neue-bold;
+  font-style: normal;
+  src: url(./../../assets/fonts/NeueMontreal-Bold.otf);
+}
+
+@font-face {
+  font-family: $editorial-regular;
+  font-style: normal;
+  src: url(./../../assets/fonts/EditorialNew-Regular.otf);
+}
+
+@font-face {
+  font-family: $editorial-bold;
+  font-style: normal;
+  src: url(./../../assets/fonts/EditorialNew-Bold.otf);
+}
