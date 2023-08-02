@@ -1,22 +1,24 @@
 "use client";
 
+import { NextPage } from "next";
 import styles from "@/sass/styles.module.scss";
-import ModelPreview from "@/components/Previews/modelPreview";
-import CardWrapper from "@/components/Wrappers/cardWrapper";
-
-import { useModelContext } from "@/context/modelContext";
 import { useFormContext } from "@/context/formContext";
-
 import FormLetter from "@/components/Forms/formLetter";
 import Result from "@/components/Results/result";
 
-const Home: React.FC = () => {
+interface Props {
+  params: {
+    form: string;
+  };
+}
+
+const Form: NextPage<Props> = ({ params }) => {
+  const { isFormCompleted } = useFormContext();
   return (
     <main className={styles.main}>
-      <CardWrapper />
-      <ModelPreview />
+      {isFormCompleted ? <Result /> : <FormLetter />}
     </main>
   );
 };
 
-export default Home;
+export default Form;

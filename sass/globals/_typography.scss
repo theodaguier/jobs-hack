@@ -12,19 +12,30 @@
     padding: 0;
     font-size: $font-size-base;
     font-weight: normal;
-    font-family: "Neue Montreal Regular", sans-serif; // Utilisation directe de la police
+    font-family: $suisse-regular;
     line-height: 1.2;
     color: $color-white;
+    font-weight: normal;
   }
   h1 {
     font-size: $font-size-xl;
-    font-family: $editorial-regular;
+    font-family: $suisse-regular;
   }
   h2 {
     font-size: $font-size-lg;
+    font-family: $editorial-regular;
   }
   h3 {
-    font-family: $neue-regular;
-    font-size: $font-size-base;
+    font-family: $suisse-regular;
+    font-size: $font-size-sm;
+  }
+  h4 {
+    font-family: $editorial-regular;
+    font-size: $font-size-sm;
+  }
+  p {
+    font-family: $suisse-regular;
+    font-size: $font-size-sm;
+    line-height: 1.5;
   }
 }

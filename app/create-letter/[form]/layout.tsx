@@ -1,8 +1,8 @@
+import type { Metadata } from "next";
 import styles from "@/sass/styles.module.scss";
 import Header from "@/components/Layouts/header";
 import { FormProvider } from "@/context/formContext";
-import { ModelProvider } from "@/context/modelContext";
-import type { Metadata } from "next";
+import { ModelProvider, useModelContext } from "@/context/modelContext";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,13 +15,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={styles.app}>
-        <Header />
-        <FormProvider>
-          <ModelProvider>{children}</ModelProvider>
-        </FormProvider>
-      </body>
-    </html>
+    <FormProvider>
+      <ModelProvider>{children}</ModelProvider>
+    </FormProvider>
   );
 }

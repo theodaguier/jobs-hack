@@ -1,0 +1,21 @@
+@use "../variables/colors" as *;
+@use "../variables/fonts" as *;
+
+.card {
+  width: 140px;
+  height: 130px;
+  background: $color-cream;
+  border-radius: 15px;
+  padding: 15px;
+  cursor: pointer;
+  .cardTitle {
+    font-family: $editorial-regular;
+    font-size: $font-size-xxl;
+    color: $color-dark;
+  }
+  .cardSubTitle {
+    font-family: $editorial-regular;
+    font-size: $font-size-md;
+    color: $color-dark;
+  }
+}

@@ -1,21 +1,15 @@
 @use "../variables/fonts" as *;
 
 @font-face {
-  font-family: $neue-light;
+  font-family: $suisse-regular;
   font-style: normal;
-  src: url(./../../assets/fonts/NeueMontreal-Light.otf);
+  src: url(./../../assets/fonts/SuisseIntl-Regular.ttf);
 }
 
 @font-face {
-  font-family: $neue-regular;
+  font-family: $suisse-bold;
   font-style: normal;
-  src: url(./../../assets/fonts/NeueMontreal-Regular.otf);
-}
-
-@font-face {
-  font-family: $neue-bold;
-  font-style: normal;
-  src: url(./../../assets/fonts/NeueMontreal-Bold.otf);
+  src: url(./../../assets/fonts/SuisseIntl-Bold.ttf);
 }
 
 @font-face {
